@@ -15,7 +15,9 @@ for direcotry2,dirs,filename in os.walk(directory2, topdown= True):
     elif user == "2":
         print(f"Sub Directory{dirs}")
     elif user == "3":
-        print(f"Items: {filename}")
+        for i in range(len(filename)):
+            print(f"item:\n{filename[i]}\n")
+        # print(f"Items: {filename}")
     elif user == "4":
         print(f"Your Directory: {directory2}")
         print()
@@ -23,7 +25,9 @@ for direcotry2,dirs,filename in os.walk(directory2, topdown= True):
         print(f"Sub Directory{dirs}")
         print()
         time.sleep(1)
-        print(f"Items: {filename}")
+        for i in range(len(filename)):
+            print(f"item:\n{filename[i]}\n")
+        # print(f"Items: {filename}")
     print("\n________________________________")    
     print("\nYou entered in your Sub Directory\n")
     print("__________________________________")
